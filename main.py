@@ -1,4 +1,6 @@
+import pandas
 import streamlit as st
+from streamlit_extras.grid import grid
 
 st.set_page_config(layout="wide")
 
@@ -21,6 +23,15 @@ Machine Learning and Artificial Intelligence.
     st.info(content)
 
 content2 = """
-Below you can find some of the apps I have built in Python. Feel free to contact me!
+Below you can find some of the apps I have built in GoLang and Python. Feel free to contact me!
 """
-st.write(content2)
+st.header(content2, divider="blue")
+
+col3, col4 = st.columns(2)
+
+df = pandas.read_csv("data.csv", sep=";")
+
+my_grid = grid(2, 2)
+
+for index, row in df.iterrows():
+    my_grid.header(row["title"])
