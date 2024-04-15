@@ -1,3 +1,7 @@
 # Skript Keeper Site
 
-A portfolio wesite to display work done in Python and GoLang
+A portfolio website to showcase work done in Python and GoLang
+
+Data to populate site reads from CSV to keep things super simple to edit and app stays lightweight.
+
+Looking to deploy via Render. 
