@@ -20,19 +20,17 @@ with col1:
 
 with col2:
     st.title("Justin C. Fulton", anchor=False)
-    content = """
-I'm a software engineer, educator, content development professional, and administrator; leveraging expertise gained over 
-many years of work in the education sector as well as advanced software design for insurance and real estate agencies. 
-I began my career as a Title 1 English Teacher, taught first in Washington state, then in Arizona, and finally spent 
-many years in the United Arab Emirates working as a teacher, web developer, and content creator. 
-    When I came back to America, I furthered my studies by gaining a degree in Computer Science, and I dove further into 
-design and software engineering. My passions and projects today are cloud networking and delving ever deeper into 
-Machine Learning and Artificial Intelligence.
-    """
+    content = """I'm a polyglot software engineer, educator, content development professional, and administrator; 
+    leveraging expertise gained over many years of work in the education sector as well as advanced software design 
+    for insurance and real estate agencies. I began my career as a Title 1 English Teacher working in Washington and 
+    Arizona. Then, I spent several years in the United Arab Emirates working as a teacher, web developer, and content 
+    creator for United Arab Emirates University. When I came back to America, I furthered my knowledge by gaining a 
+    degree in Computer Science. I'm currently working as a full time remote software engineer. My passions and 
+    projects are in cloud engineering and delving ever deeper into Machine Learning and Artificial Intelligence."""
     st.info(content)
 
 content2 = """
-Below you can find some of the apps I have built in GoLang and Python. Feel free to contact me!
+Below you can find some of the apps I have built in GoLang, Python, JavaScript, and PHP. 
 """
 st.header(content2, divider="blue")
 
