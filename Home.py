@@ -2,7 +2,11 @@ import pandas
 import streamlit as st
 from streamlit_extras.grid import grid
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_title="Justin C. Fulton",
+    page_icon="☠",
+)
 
 # Squirrly, but trying to stop the "full screen" button from appearing as it doesn't align well in grids.
 hide_full_screen = '''
