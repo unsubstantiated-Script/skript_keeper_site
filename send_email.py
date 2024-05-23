@@ -1,13 +1,15 @@
-import smtplib, ssl
 import os
+import smtplib
+import ssl
+
 
 def send_email(message):
     host = 'smtp.gmail.com'
     port = 465
 
-    username = "unsubstantiated.script@gmail.com"
-    # Note to self. Password sits in .zshrc and awaits deployment for environment there.
-    password = os.getenv("GMAIL_PASSWORD")
+    username = os.environ.get("GMAIL_ACCOUNT")
+
+    password = os.environ.get("GMAIL_PASSWORD")
 
     context = ssl.create_default_context()
 
@@ -15,4 +17,3 @@ def send_email(message):
         server.login(username, password)
         server.sendmail(username, username, message)
         server.quit()
-        print('Email sent!')
