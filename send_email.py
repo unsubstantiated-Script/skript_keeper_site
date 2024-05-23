@@ -15,4 +15,3 @@ def send_email(message):
         server.login(username, password)
         server.sendmail(username, username, message)
         server.quit()
-        print('Email sent!')
