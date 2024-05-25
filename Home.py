@@ -20,7 +20,7 @@ st.markdown(hide_full_screen, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image('img/profile_photo.png', use_column_width=True)
+    st.image('static/profile_photo.png', use_column_width=True)
 
 with col2:
     st.title("Justin C. Fulton", anchor=False)
@@ -46,5 +46,5 @@ for index, row in df.iterrows():
     tile = my_grid.container()
     tile.header(row["title"], anchor=False)
     tile.write(row["description"])
-    tile.image("img/" + row["image"], use_column_width='always')
+    tile.image("static/" + row["image"], use_column_width='always')
     tile.write(f"[Source Code]({row['url']})")
