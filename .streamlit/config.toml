@@ -2,3 +2,6 @@
 base = "dark"
 font = "sans serif"
 backgroundColor = "#333333"
+
+[server]
+enableStaticServing = true
